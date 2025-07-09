@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con JavaScript</title>
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+
+    <script>
+        // 1. Escribir un mensaje en la consola del desarrollador del navegador.
+        // Puedes ver esto abriendo las herramientas de desarrollador (usualmente con F12 o Cmd+Opt+I).
+        console.log("¡El script se ha cargado correctamente!");
+
+        // 2. Una función simple que suma dos números.
+        function sumar(a, b) {
+            return a + b;
+        }
+
+        const resultado = sumar(5, 10);
+        console.log("El resultado de la suma es:", resultado);
+
+        // 3. Manipular el contenido del HTML (el DOM).
+        // Cambiamos el texto del encabezado H1 después de 2 segundos.
+        setTimeout(() => {
+            document.querySelector('h1').textContent = "¡Hola desde JavaScript!";
+        }, 2000); // 2000 milisegundos = 2 segundos
+    </script>
+</body>
+</html>
